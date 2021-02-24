@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TwoUp</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="twoUpScript.js"></script>
+    </head>
+    <body>
+        <h2>TwoUp</h2>
+        <form>
+            <label for="numRolls">How many times would you like to roll? :</label>
+            <input type="number" name="numRolls" id="numRolls">
+            <br><br><br>
+            <label>Choose a side:</label>
+            <br><br>
+            <label for="headChoice">Heads</label>
+            <input type="radio" id="headChoice" name="betChoice" value="Heads">
+            <label for="tailChoice">Tails</label>
+            <input type="radio" id="tailChoice" name="betChoice" value="Tails">
+            <br><br><br>
+            <label for="betAmount">How much money would you like to put on? :</label>
+            <input type="number" id="betAmount" name="betAmount" min="1">
+            <br><br>
+            <input type="button" id="startButton" name="startButton" value="Start">
+        </form>
+
+    </body>
+</html>

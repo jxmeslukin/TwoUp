@@ -7,3 +7,8 @@ body {
 h2 {
     color: lightsalmon;
 }
+
+.resultBox {
+    width: 30%;
+    height: 300px;
+}

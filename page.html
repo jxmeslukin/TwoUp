@@ -1,29 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>TwoUp</title>
         <link rel="stylesheet" href="stylesheet.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
         <script src="twoUpScript.js"></script>
     </head>
     <body>
         <h2>TwoUp</h2>
         <form>
-            <label for="numRolls">How many times would you like to roll? :</label>
-            <input type="number" name="numRolls" id="numRolls">
+            <div class="row g-3 align-items-center">
+                <div class="col-auto">
+            <label for="numRolls" class="form-label">How many times would you like to roll? :</label>
+            <input type="number" class="form-control" name="numRolls" id="numRolls">
             <br><br><br>
             <label>Choose a side:</label>
             <br><br>
-            <label for="headChoice">Heads</label>
-            <input type="radio" id="headChoice" name="betChoice" value="Heads">
-            <label for="tailChoice">Tails</label>
-            <input type="radio" id="tailChoice" name="betChoice" value="Tails">
+            <div class="form-check">
+            <label for="headChoice" class="form-check-label">Heads</label>
+            <input type="radio" id="headChoice" name="betChoice" value="Heads" class="form-check-input">
+            <br>
+            <label for="tailChoice" class="form-check-label">Tails</label>
+            <input type="radio" id="tailChoice" name="betChoice" value="Tails" class="form-check-input">
+            </div>
             <br><br><br>
             <label for="betAmount">How much money would you like to put on? :</label>
             <input type="number" id="betAmount" name="betAmount" min="1">
             <br><br>
-            <input type="button" id="startButton" name="startButton" value="Start" onclick="game()">
+            <input type="button" id="startButton" class="btn btn-primary" name="startButton" value="Start" onclick="game()">
             <br><br><br>
             <textarea id="listBox" name="myList" readonly="true" class="resultBox"></textarea>
+                </div>
+            </div>
         </form>
 
     </body>
